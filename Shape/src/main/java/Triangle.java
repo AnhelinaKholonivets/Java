@@ -9,7 +9,6 @@ public class Triangle extends Shape {
 
     public Triangle(Point a, Point b, Point c) throws IllegalArgumentException {
         this.sidesLength = new double[]{distance(a, b), distance(b, c), distance(a, c)};
-        System.out.println(Arrays.toString(sidesLength));
         checkTriangle(a, b, c);
     }
 
